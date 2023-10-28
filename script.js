@@ -34,6 +34,7 @@ function generateCard() {
     container.appendChild(cardClone);
 
     video.addEventListener("mouseover", function () {
+      video.style.borderRadius = "2px";
       if (video.paused) {
         video.play();
         video.currentTime = 0; // Remet la vidéo au début
@@ -41,6 +42,7 @@ function generateCard() {
     });
 
     video.addEventListener("mouseout", function () {
+      video.style.borderRadius = "";
       if (!video.paused) {
         video.pause();
       }
@@ -48,6 +50,4 @@ function generateCard() {
   });
 }
 
-document.addEventListener("DOMContentLoaded", function () {
-  generateCard();
-});
+export { generateCard };

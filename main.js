@@ -1,2 +1,6 @@
 import "./style.scss";
-import "./script.js";
+import { generateCard } from "./script.js";
+
+document.addEventListener("DOMContentLoaded", function () {
+  generateCard();
+});
