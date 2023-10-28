@@ -14,6 +14,11 @@ let jvTab = [
     title: "Lord of the Fallen",
     price: "45.99",
   },
+  {
+    src: "https://gaming-cdn.com/videos/products/14461/800x450/super-mario-bros-wonder-switch-switch-jeu-nintendo-eshop-europe-preview.webm?v=1698239220",
+    title: "Super Mario Bros. Wonder",
+    price: "35.99",
+  },
 ];
 
 function generateCard() {
@@ -29,7 +34,7 @@ function generateCard() {
 
     video.src = cardData.src;
     title.textContent = cardData.title;
-    price.textContent = `${cardData.price} $`;
+    price.textContent = `${cardData.price}$`;
 
     container.appendChild(cardClone);
 
